@@ -6,4 +6,4 @@ RUN curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/s
 
 RUN chmod u+x kubectl && mv kubectl /bin/kubectl
 
-CMD kubectl
+CMD kubectl version --client
